@@ -4,6 +4,7 @@ Ce guide explique comment configurer et utiliser un Makefile dans Visual Studio 
 
 
 ## Avant toute chose configurer Vscode
+
 Aller dans la barre d'état, Taille des Tabulatons, puis option "Mettre en retrait avec des tabulations"
 Selectionner le nombre qui vous convient et enregistrer.
 ![Img1](img/Tab0.png)
@@ -35,3 +36,23 @@ clean:
 run:
     ./$(TARGET)
 
+# Pour la configuration de Geany (sur Linux)
+Aller dans :
+sudo nano ~/.config/geany/geany.conf
+Modifie Vite :
+[VTE]
+cursor_shape=block  # Options : block, underline, bar
+cursor_shape=bar
+Enregistrer et Allez dans le settings de votre terminal bash ou zsh:
+sudo nano ~/.zshrc
+Ajouter à la fin:
+echo -e "\e[6 q" 
+Puis faite :
+source ~/.zshrc
+Redémarrer Geany pour avoir votre terminal en |.
+Pour plus de personnalisation comme copie-colle:
+[tools]
+terminal=/usr/bin/gnome-terminal
+Puis installer les dépendances:
+sudo apt install xclip xsel
+sudo apt update && sudo apt upgrade
