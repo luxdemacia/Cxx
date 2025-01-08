@@ -25,7 +25,7 @@
 #include <iostream>	 // Cette directive d'inclusion indique au compilateur d'importer le fichier d'en-tête iostream, qui permet d'utiliser des fonctionnalités d'entrée et de sortie standard, comme cout et cin.
 using namespace std;	// Cette ligne permet d'utiliser tous les noms du namespace std sans avoir à les précéder de std::. Par exemple, au lieu d'écrire std::cout, nous pouvons simplement écrire cout.
 
-int main(int argc, char **argv)	//	On pourrait bien sûr le faire sans les arguments : int main()
+int main()	//	On pourrait bien sûr le faire sans les arguments : int main()
 {
 	cout<<"\nSalut Boubacar comment vas tu ?"<<endl;
 	return 0;
