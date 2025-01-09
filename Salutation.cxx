@@ -27,7 +27,29 @@ using namespace std;	// Cette ligne permet d'utiliser tous les noms du namespace
 
 int main()	//	On pourrait bien sûr le faire sans les arguments : int main()
 {
+	//Suffixex
+	//u, U (non signé)
+	//f, F (flottant)
+	//l, L (long int, long double)
+	//ll, LL (long long int, long long double int)
+	
+	
+	//Préfixes
+	//0b (binaire)
+	//0 (octal)
+	//0x (hexadécimal)
+	
 	cout<<"\nSalut Boubacar comment vas tu ?"<<endl;
+	cout<<"As tu bien mangé ?"<<endl;
+	//bool IsOpen{};
+	//float Somme{50.0f};	//	Par défaut il sont initialiseés à 0 les {}.
+	int Binaire = 1994;
+	//Binaire=0bBinaire;
+	
+	//cout<<"Somme est:"<<Somme<<endl;
+	//cout<<"Somme est:"<<Somme<<endl;
+	cout<<"La en binaire est:"<<Binaire<<endl;
+	
 	return 0;
 }
 
@@ -35,6 +57,9 @@ int main()	//	On pourrait bien sûr le faire sans les arguments : int main()
 //	int argc : Cela représente le nombre d'arguments passés au programme via la ligne de commande (y compris le nom du programme lui-même).
 //	char **argv : C'est un tableau de chaînes de caractères qui contient les arguments passés au programme.
 //	{} : Elle représente l'ouverture et la fermeture de la fonction main().
-//	cout : est utilisé pour afficher des données sur la sortie standard.
-//	endl : est un manipulateur qui insère un caractère de nouvelle ligne dans la sortie et vide (flush) le tampon de sortie (Cela garantit que tout ce qui a été envoyé à cout est bien affiché à l'écran immédiatement.)
+//	cout : est utilisé pour afficher des données sur la sortie standard (Stockage en la memoire tempon)
+//	clog : pour les logs (Stockage en memoire tempon)
+// 	cerr : la sortie d'erreur standard (Affichage directe )
+//	endl : retour à la ligne + flush (vide memoire)
 //	return 0; : Cette ligne termine la fonction main et retourne 0 au système d'exploitation. Un retour de 0 indique que le programme s'est exécuté avec succès.
+
