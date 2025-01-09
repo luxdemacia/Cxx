@@ -1,8 +1,8 @@
 # Fichiers sources
-SRCS = main.cxx Message.cxx
+SRCS = App.cxx Message.cxx
 
 # Nom de l'exécutable
-TARGET = bg:
+TARGET = Message:
 
 # Commande de compilation
 all:
@@ -12,4 +12,4 @@ clean:
 	rm -f $(TARGET)
 # Exécutable
 run:
-	$(TARGET)
+	./$(TARGET)
