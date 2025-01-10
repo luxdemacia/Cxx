@@ -11,6 +11,7 @@ Selectionner le nombre qui vous convient et enregistrer.
 ![Img2](img/Tab1.png)
 ![Img3](img/Tab2.png)
 
+
 Vous pouvez aussi supprimer et resaisir de A à Z votre Makefile.
 
 ## Étape de Création du Makefile
@@ -56,9 +57,10 @@ terminal=/usr/bin/gnome-terminal
 Puis installer les dépendances:
 sudo apt install xclip xsel
 sudo apt update && sudo apt upgrade
+```
 
 
-# Pour configurer la compilation de Makefile sur Geany, Il faut suivre ces étapes: 
+## Pour configurer la compilation de Makefile sur Geany, Il faut suivre ces étapes: 
 Se placer depuis ton fichier Makefile:
 Aller dans l'onglet "Build"
 Sélectionner "Set Build Commands" vous verrez dans ce cas "Make Commands" (Sans être dans le fichier Makefile cette option n'apparaîtra pas.)
@@ -68,5 +70,6 @@ Sélectionner "Set Build Commands" vous verrez dans ce cas "Make Commands" (Sans
 
 
 Plus de détail en image dans mon cas:
-![Img4](img/MakeConfig.png)
+
+![Img4](img/Tab3.png)
 
