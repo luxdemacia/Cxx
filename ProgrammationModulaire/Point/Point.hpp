@@ -4,15 +4,15 @@
 class Point {  
 public:  
     // Constructeur  
-    Point(double x, double y, double z);  
+    Point(double x, double y, double z);
     
-    // Accesseurs  
+    // Déclaration des méthodes de class
     double x() const;
     double y() const;
     double z() const;
     
     // Surcharge de l'opérateur +=  
-    Point& operator +=(Point const& pt);  
+    Point & operator +=(Point const& pt);  
 
 // Coordonnées du point  
 private:  
