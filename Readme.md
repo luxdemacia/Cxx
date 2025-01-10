@@ -39,16 +39,19 @@ run:
 
 ```
 ## Exécuter votre Makefile via les commandes:
-``sh
-
+``
 make
+``
+``
 make run
+``
+``
 clean ou make clean (selon la config)
 ``
 
 # Pour la configuration de Geany sur Linux (exemple de Kali-Linux)
 Aller dans :
-``sh
+``
 sudo nano ~/.config/geany/geany.conf
 ``
 Modifie Vite :
@@ -61,7 +64,7 @@ Ajouter à la fin:
 echo -e "\e[6 q" 
 
 Puis faite :
-``sh
+``
 source ~/.zshrc
 ``
 
@@ -71,7 +74,7 @@ Pour plus de personnalisation comme copie-colle:
 terminal=/usr/bin/gnome-terminal
 
 Puis installer les dépendances:
-``sh
+``
 sudo apt install xclip xsel
 sudo apt update && sudo apt upgrade
 ``
@@ -80,9 +83,11 @@ sudo apt update && sudo apt upgrade
 Se placer depuis ton fichier Makefile:
 Aller dans l'onglet "Build"
 Sélectionner "Set Build Commands" vous verrez dans ce cas "Make Commands" (Sans être dans le fichier Makefile cette option n'apparaîtra pas.)
+``
 1ér Label =  Make       Command = make
 2ém Label = Make run    Command = make run
 3ém Label = Make clean  Command = clean (Cela dependra de votre configuration de fichier Makefile  et c'est même optionnel)
+``
 
 
 Plus de détail en image dans mon cas:
