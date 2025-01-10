@@ -12,7 +12,7 @@ Selectionner le nombre qui vous convient et enregistrer.
 ![Img3](img/Tab2.png)
 
 
-Vous pouvez aussi supprimer et resaisir de A à Z votre Makefile.
+Vous pouvez aussi supprimer et resaisir de A à Z votre Makefile pour éviter les espaces blancs sinon elle marchera pas.
 
 ## Étape de Création du Makefile
 
@@ -37,6 +37,15 @@ clean:
 run:
     ./$(TARGET)
 
+```
+## Exécuter votre Makefile via les commandes:
+``sh
+
+make
+make run
+clean ou make clean (selon la config)
+``
+
 # Pour la configuration de Geany (sur Linux)
 Aller dans :
 sudo nano ~/.config/geany/geany.conf
@@ -57,8 +66,6 @@ terminal=/usr/bin/gnome-terminal
 Puis installer les dépendances:
 sudo apt install xclip xsel
 sudo apt update && sudo apt upgrade
-```
-
 
 ## Pour configurer la compilation de Makefile sur Geany, Il faut suivre ces étapes: 
 Se placer depuis ton fichier Makefile:
