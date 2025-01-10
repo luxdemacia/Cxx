@@ -121,3 +121,6 @@ Salut beau gosse ! # En affichage
 ![Img5](img/Tab4.png)
 
 
+# Explication de la fonction Point:
+Un peu d'explication de la fonction sur cette image
+![Img6](img/Tab5.png)
