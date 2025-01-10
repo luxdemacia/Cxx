@@ -102,3 +102,22 @@ Plus de détail en image dans mon cas:
 
 ![Img4](img/Tab3.png)
 
+# La compilation avec le Terminal de plusieurs ficiers (Sans Makefile):
+On fait Compilation des fichiers objets associé à chaque fichier source :
+```
+PS C:ProgrammationModulaire> g++ -c .\App.cxx -o App.o
+PS C:ProgrammationModulaire> g++ -c .\Message.cxx -o .Message.o
+```
+
+Puis faire une édition des liens ( sans "-c" )
+```
+PS C:ProgrammationModulaire> g++ .\Message.o .\App.o -o monprogramme
+```
+On exécute le programme  avec la commande :
+```
+PS C:ProgrammationModulaire> .\monprogramme.exe
+```
+Salut beau gosse ! # En affichage
+![Img5](img/Tab4.png)
+
+
