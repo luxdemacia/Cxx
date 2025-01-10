@@ -48,8 +48,8 @@ int main()
     cout << "\nAffichage de  l'année de naissance dans différents formats :\n";
     cout << "Décimal (Qui est la base naturelle ou la base que l'on utilise par défaut)      : " << annee << endl;
     cout << "Binaire (Qui est le language machine, langage dont les ordinateurs comprennent)      : " << bitset<16>(annee) << endl; // 16 bits pour afficher le binaire
-    cout << "Octal (La base 8)         : " << oct << annee << endl; // oct manipule l'affichage en octal
-    cout << "Hexadécimal (La base 16)  : " << hex << annee << endl; // hex manipule l'affichage en hexadécimal
+    cout << "Octal (C'est la base 8)         : " << oct << annee << endl; // oct manipule l'affichage en octal
+    cout << "Hexadécimal (C'est la base 16)  : " << hex << annee << endl; // hex manipule l'affichage en hexadécimal
 
     return 0;
 }
