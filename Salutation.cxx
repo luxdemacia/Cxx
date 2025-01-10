@@ -43,7 +43,7 @@ int main()	//	On pourrait bien sûr le faire sans les arguments : int main()
 	cout<<"As tu bien mangé ?"<<endl;
 	//bool IsOpen{};
 	//float Somme{50.0f};	//	Par défaut il sont initialiseés à 0 les {}.
-	int Binaire = 1994;
+	int Binaire = 01994;
 	//Binaire=0bBinaire;
 	
 	//cout<<"Somme est:"<<Somme<<endl;
