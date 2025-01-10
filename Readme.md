@@ -46,9 +46,11 @@ make run
 clean ou make clean (selon la config)
 ``
 
-# Pour la configuration de Geany (sur Linux)
+# Pour la configuration de Geany sur Linux (exemple de Kali-Linux)
 Aller dans :
+``sh
 sudo nano ~/.config/geany/geany.conf
+``
 Modifie Vite :
 [VTE]
 cursor_shape=block  # Options : block, underline, bar
@@ -57,15 +59,22 @@ Enregistrer et Allez dans le settings de votre terminal bash ou zsh:
 sudo nano ~/.zshrc
 Ajouter à la fin:
 echo -e "\e[6 q" 
+
 Puis faite :
+``sh
 source ~/.zshrc
+``
+
 Redémarrer Geany pour avoir votre terminal en |.
 Pour plus de personnalisation comme copie-colle:
 [tools]
 terminal=/usr/bin/gnome-terminal
+
 Puis installer les dépendances:
+``sh
 sudo apt install xclip xsel
 sudo apt update && sudo apt upgrade
+``
 
 ## Pour configurer la compilation de Makefile sur Geany, Il faut suivre ces étapes: 
 Se placer depuis ton fichier Makefile:
