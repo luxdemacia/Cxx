@@ -1,5 +1,5 @@
 # Fichiers sources
-SRCS = App.cxx Message.cxx
+SRCS = main.cxx Message.cxx
 
 # Nom de l'exécutable
 TARGET = Message:

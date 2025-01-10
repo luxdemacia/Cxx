@@ -56,3 +56,17 @@ terminal=/usr/bin/gnome-terminal
 Puis installer les dépendances:
 sudo apt install xclip xsel
 sudo apt update && sudo apt upgrade
+
+
+# Pour configurer la compilation de Makefile sur Geany, Il faut suivre ces étapes: 
+Se placer depuis ton fichier Makefile:
+Aller dans l'onglet "Build"
+Sélectionner "Set Build Commands" vous verrez dans ce cas "Make Commands" (Sans être dans le fichier Makefile cette option n'apparaîtra pas.)
+1ér Label =  Make       Command = make
+2ém Label = Make run    Command = make run
+3ém Label = Make clean  Command = clean (Cela dependra de votre configuration de fichier Makefile  et c'est même optionnel)
+
+
+Plus de détail en image dans mon cas:
+![Img1](img/MakeConfig.png)
+
