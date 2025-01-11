@@ -96,9 +96,10 @@ Sélectionner "Set Build Commands" vous verrez dans ce cas "Make Commands" (Sans
 2ém Label = Make run    Command = make run
 3ém Label = Make clean  Command = clean (Cela dependra de votre configuration de fichier Makefile  et c'est même optionnel)
 ```
+Dans la case "Commandes d'exécution" sur l'image remplacer (cas de Linux) ./%e par make run && xterm -e "./%e"
+![Img7](img/Tab6.png)
 
-
-Plus de détail en image dans mon cas:
+Sur windows, simmilaire (selon votre perminal pwsh ou cmd)
 
 ![Img4](img/Tab3.png)
 
