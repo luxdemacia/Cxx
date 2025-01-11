@@ -40,8 +40,8 @@ int main()	//	On pourrait bien sûr le faire sans les arguments : int main()
 	//0 (octal)
 	//0x (hexadécimal)
 	
-	cout<<"\nSalut Boubacar comment vas tu ?"<<endl;
-	cout<<"As tu bien mangé ?"<<endl;
+/* 	cout<<"\nSalut Boubacar comment vas tu ?"<<endl;
+	cout<<"As tu bien mangé ?"<<endl; */
 	//bool IsOpen{};
 	//float Somme{50.0f};	//	Par défaut il sont initialiseés à 0 les {}.
 	//Binaire=0bBinaire;
