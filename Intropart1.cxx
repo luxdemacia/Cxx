@@ -21,39 +21,17 @@
  * 
  */
 
+#include <iostream>
+using namespace std;
 
-#include <iostream>	 // Cette directive d'inclusion indique au compilateur d'importer le fichier d'en-tête iostream, qui permet d'utiliser des fonctionnalités d'entrée et de sortie standard, comme cout et cin.
-#include <bitset>	//	Permet de convertir un nombre en binaire
-using namespace std;	// Cette ligne permet d'utiliser tous les noms du namespace std sans avoir à les précéder de std::. Par exemple, au lieu d'écrire std::cout, nous pouvons simplement écrire cout.
-
-int main()	//	On pourrait bien sûr le faire sans les arguments : int main()
+int main()
 {
-	//Suffixex
-	//u, U (non signé)
-	//f, F (flottant)
-	//l, L (long int, long double)
-	//ll, LL (long long int, long long double int)
-	
-	
-	//Préfixes
-	//0b (binaire)
-	//0 (octal)
-	//0x (hexadécimal)
-	
-	cout<<"\nSalut Codex comment vas tu ?"<<endl;
-	cout<<"As tu bien mangé ?"<<endl;
-	//bool IsOpen{};
-	//float Somme{50.0f};	//	Par défaut ils sont initialisés à 0 les {}.
-	
-	int n;
-	cout<<"Donner le nombre à convertir :"<<endl;
-	cin>>n;
-	cout<<"Le nombre en base décimal(10) est :"<< dec << n <<endl;
-	cout<<"Le nombre en binaire (Base(2)) est : "<< bitset<8>(n) <<endl;
-	cout<<"Le nombre en hexadécimal (Base(16)) est : "<< hex << (n) <<endl;
-	
-	return 0;
+    
+    cout << "\nSalut CODEX comment vas-tu ?" << endl;
+
+    return 0;
 }
+
 
 //	int main(int argc, char **argv) : C'est la fonction principale du programme, où l'exécution commence.
 //	int argc : Cela représente le nombre d'arguments passés au programme via la ligne de commande (y compris le nom du programme lui-même).
@@ -64,4 +42,3 @@ int main()	//	On pourrait bien sûr le faire sans les arguments : int main()
 // 	cerr : la sortie d'erreur standard (Affichage directe )
 //	endl : retour à la ligne + flush (vide memoire)
 //	return 0; : Cette ligne termine la fonction main et retourne 0 au système d'exploitation. Un retour de 0 indique que le programme s'est exécuté avec succès.
-

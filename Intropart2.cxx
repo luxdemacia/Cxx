@@ -21,39 +21,39 @@
  * 
  */
 
-#include <iostream>
-#include <bitset> // Pour afficher les valeurs en binaire
-using namespace std;
 
-int main()
+#include <iostream>	 // Cette directive d'inclusion indique au compilateur d'importer le fichier d'en-tête iostream, qui permet d'utiliser des fonctionnalités d'entrée et de sortie standard, comme cout et cin.
+#include <bitset>	//	Permet de convertir un nombre en binaire
+using namespace std;	// Cette ligne permet d'utiliser tous les noms du namespace std sans avoir à les précéder de std::. Par exemple, au lieu d'écrire std::cout, nous pouvons simplement écrire cout.
+
+int main()	//	On pourrait bien sûr le faire sans les arguments : int main()
 {
-    // Suffixes
-    // u, U (non signé)
-    // f, F (flottant)
-    // l, L (long int, long double)
-    // ll, LL (long long int, long long double int)
-    
-    // Préfixes
-    // 0b (binaire)
-	//	decimal
-    // 0 (octal)
-    // 0x (hexadécimal)
-    
-    cout << "\nSalut Boubacar comment vas-tu ?" << endl;
-    cout << "As-tu bien mangé ?" << endl;
-
-	int annee = 1994;
-
-    // Affichage dans différents formats
-    cout << "\nAffichage de  l'année de naissance dans différents formats :\n";
-    cout << "Décimal (Qui est la base naturelle ou la base que l'on utilise par défaut)      : " << annee << endl;
-    cout << "Binaire (Qui est le language machine, langage dont les ordinateurs comprennent)      : " << bitset<16>(annee) << endl; // 16 bits pour afficher le binaire
-    cout << "Octal (C'est la base 8)         : " << oct << annee << endl; // oct manipule l'affichage en octal
-    cout << "Hexadécimal (C'est la base 16)  : " << hex << annee << endl; // hex manipule l'affichage en hexadécimal
-
-    return 0;
+	//Suffixex
+	//u, U (non signé)
+	//f, F (flottant)
+	//l, L (long int, long double)
+	//ll, LL (long long int, long long double int)
+	
+	
+	//Préfixes
+	//0b (binaire)
+	//0 (octal)
+	//0x (hexadécimal)
+	
+	cout<<"\nSalut Codex comment vas tu ?"<<endl;
+	cout<<"As tu bien mangé ?"<<endl;
+	//bool IsOpen{};
+	//float Somme{50.0f};	//	Par défaut ils sont initialisés à 0 les {}.
+	
+	int n;
+	cout<<"Donner le nombre à convertir :"<<endl;
+	cin>>n;
+	cout<<"Le nombre en base décimal(10) est :"<< dec << n <<endl;
+	cout<<"Le nombre en binaire (Base(2)) est : "<< bitset<8>(n) <<endl;
+	cout<<"Le nombre en hexadécimal (Base(16)) est : "<< hex << (n) <<endl;
+	
+	return 0;
 }
-
 
 //	int main(int argc, char **argv) : C'est la fonction principale du programme, où l'exécution commence.
 //	int argc : Cela représente le nombre d'arguments passés au programme via la ligne de commande (y compris le nom du programme lui-même).
