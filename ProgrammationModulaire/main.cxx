@@ -23,11 +23,10 @@
 
 
 #include <iostream>
-#include"Header.hpp"
+#include"Message.hpp"
 
 int main()
 {
 	sms();
 	return 0;
 }
-

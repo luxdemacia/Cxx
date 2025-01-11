@@ -9,7 +9,7 @@ all:
 	g++ $(SRCS) -o $(TARGET)
 # Nettoyage des fichiers temporaires
 clean:
-	rm -f $(TARGET)
+	rm -rf $(TARGET)
 # Exécutable
 run:
 	./$(TARGET)
