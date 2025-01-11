@@ -87,7 +87,7 @@ sudo apt install xclip xsel
 sudo apt update && sudo apt upgrade
 ```
 
-## Configurer et Compiler le Makefile sur Geany (Fais sur Windows mais pareil pour les autres distributions), il faut suivre ces étapes: 
+## Configurer et Compiler le Makefile sur Geany (Fais sur Linux mais pareil pour les autres distributions), il faut suivre ces étapes: 
 Se placer depuis ton fichier Makefile:
 Aller dans l'onglet "Build"
 Sélectionner "Set Build Commands" vous verrez dans ce cas "Make Commands" (Sans être dans le fichier Makefile cette option n'apparaîtra pas.)
