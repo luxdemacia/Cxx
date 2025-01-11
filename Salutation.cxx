@@ -23,6 +23,7 @@
 
 
 #include <iostream>	 // Cette directive d'inclusion indique au compilateur d'importer le fichier d'en-tête iostream, qui permet d'utiliser des fonctionnalités d'entrée et de sortie standard, comme cout et cin.
+#include <bitset>	//	Permet de convertir un nombre en binaire
 using namespace std;	// Cette ligne permet d'utiliser tous les noms du namespace std sans avoir à les précéder de std::. Par exemple, au lieu d'écrire std::cout, nous pouvons simplement écrire cout.
 
 int main()	//	On pourrait bien sûr le faire sans les arguments : int main()
@@ -43,12 +44,14 @@ int main()	//	On pourrait bien sûr le faire sans les arguments : int main()
 	cout<<"As tu bien mangé ?"<<endl;
 	//bool IsOpen{};
 	//float Somme{50.0f};	//	Par défaut il sont initialiseés à 0 les {}.
-	int Binaire = 01994;
 	//Binaire=0bBinaire;
 	
 	//cout<<"Somme est:"<<Somme<<endl;
 	//cout<<"Somme est:"<<Somme<<endl;
-	cout<<"La en binaire est:"<<Binaire<<endl;
+	int n;
+	cout<<"Donner un nom à convertir:"<<endl;
+	cin>>n;
+	cout<<"Le nombre en binaire (Base(2)) est : "<<bitset<8>(n) <<endl;
 	
 	return 0;
 }
