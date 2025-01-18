@@ -2,7 +2,7 @@
 
 Ce guide explique comment installer configurer et utiliser un Makefile dans Visual Studio Code pour compiler et exécuter un projet C++.
 
-## Installation :
+## Installation (Sur Windows) :
 Installer MingW via le site officiel.
 Crée un lien symbolique pour éviter de modifier l'original ```mingw32-make.exe```, tu peux ```créer un lien symbolique nommé make.exe qui pointe vers mingw32-make.exe```:
 Sur windows( car Linux n'a pas ces problèmes), exécuter la commande :
@@ -12,8 +12,8 @@ Maintenat vérifier votre version make :
 ![Img8](img/Tab7.png)
 
 
-## (Avec Vscode) Avant de continuer configurer Vscode
-
+## (Avec Vscode) Avant de continuer configurer Vscode :
+Télécharger l'extension ``` Makefile ``` depuis le gestionnaire des extensions.
 Aller dans la barre d'état, Taille des Tabulatons, puis option "Mettre en retrait avec des tabulations"
 Selectionner le nombre qui vous convient et enregistrer.
 ![Img1](img/Tab0.png)
@@ -45,8 +45,9 @@ clean:
 # Exécution du programme
 run:
     ./$(TARGET)
-
 ```
+
+Remplacer :   ``` rm -f $(TARGET)   par   del $(TARGET)```  si vous êtes sur Windows
 ## Exécuter votre Makefile via les commandes:
 ```
 make
@@ -57,8 +58,10 @@ make run
 ```
 clean ou make clean (selon la config)
 ```
+# Configuration du Makefile sur Geany
 
-# Pour la configuration de Geany sur Linux (exemple de Kali-Linux)
+Le reste explique comment installer configurer et utiliser un Makefile dans Geany pour compiler et exécuter un projet C++.
+# (Optionnel) Pour la configuration de Geany sur Linux :
 Aller dans :
 ```
 sudo nano ~/.config/geany/geany.conf
@@ -109,7 +112,7 @@ Dans la case "Commandes d'exécution" sur l'image remplacer (cas de Linux) ./%e 
 ![Img7](img/Tab6.png)
 
 Sur windows, simmilaire (selon votre perminal pwsh ou cmd)
-
+Il ne faut pas oublier la partie 1 Installation de MinGW (Sur Windows) : car la commade make ne marchera pas, donc activer le lien Symbolique ```mingw-make.exe ---> make.exe```.
 ![Img4](img/Tab3.png)
 
 # La compilation avec le Terminal de plusieurs ficiers (Sans Makefile):
