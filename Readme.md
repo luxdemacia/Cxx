@@ -1,9 +1,18 @@
 # Configuration du Makefile sur Visual Studio Code
 
-Ce guide explique comment configurer et utiliser un Makefile dans Visual Studio Code pour compiler et exécuter un projet C++.
+Ce guide explique comment installer configurer et utiliser un Makefile dans Visual Studio Code pour compiler et exécuter un projet C++.
+
+## Installation :
+Installer MingW via le site officiel.
+Crée un lien symbolique pour éviter de modifier l'original ```mingw32-make.exe```, tu peux ```créer un lien symbolique nommé make.exe qui pointe vers mingw32-make.exe```:
+Sur windows( car Linux n'a pas ces problèmes), exécuter la commande :
+```New-Item -ItemType SymbolicLink -Path C:\MinGW\bin\make.exe -Target C:\MinGW\bin\mingw32-make.exe```
+Maintenat vérifier votre version make :
+```make --version```
+![Img8](img/Tab7.png)
 
 
-## Avant toute chose configurer Vscode
+## (Avec Vscode) Avant de continuer configurer Vscode
 
 Aller dans la barre d'état, Taille des Tabulatons, puis option "Mettre en retrait avec des tabulations"
 Selectionner le nombre qui vous convient et enregistrer.
