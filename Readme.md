@@ -8,10 +8,14 @@ Crée un lien symbolique pour éviter de modifier l'original ```mingw32-make.exe
 Tu peux ```créer un lien symbolique nommé make.exe qui pointe vers mingw32-make.exe```.
 
 Sur windows( car Linux n'a pas ces problèmes), exécuter la commande :
-```New-Item -ItemType SymbolicLink -Path C:\MinGW\bin\make.exe -Target C:\MinGW\bin\mingw32-make.exe```
+```
+New-Item -ItemType SymbolicLink -Path C:\MinGW\bin\make.exe -Target C:\MinGW\bin\mingw32-make.exe
+```
 
 Maintenat vérifier votre version make :
-```make --version```
+```
+make --version
+```
 ![Img8](img/Tab7.png)
 
 
