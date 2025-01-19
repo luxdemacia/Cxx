@@ -92,7 +92,20 @@ run:
 # Configuration du Makefile sur Geany
 
 Le reste explique comment installer configurer et utiliser un Makefile dans Geany pour compiler et exécuter un projet C++.
-# (Optionnel) Pour la configuration de Geany sur Linux :
+
+# Configurer et Compiler le Makefile sur Geany  Linux puis Windows: 
+## Sur Linux
+Se placer depuis ton fichier Makefile:
+Aller dans l'onglet "Build"
+Sélectionner "Set Build Commands" vous verrez dans ce cas "Make Commands" (Sans être dans le fichier Makefile cette option n'apparaîtra pas.)
+```
+1ér Label =  Make       Command = make
+2ém Label = Make run    Command = make run
+3ém Label = Make clean  Command = clean (Cela dependra de votre configuration de fichier Makefile  et c'est même optionnel)
+```
+Dans la case "Commandes d'exécution" sur l'image remplacer (cas de Linux) ./%e par make run && xterm -e "./%e"
+![Img7](img/Tab6.png)
+## (Optionnel) Préparation de l'environnement Linux :
 Aller dans :
 ```
 sudo nano ~/.config/geany/geany.conf
@@ -102,7 +115,7 @@ Modifie Vite :
 ```
 cursor_shape=block  # Options : block, underline, bar
 ```
-DOnc le remplacer par:
+Donc le remplacer par:
 ```
 cursor_shape=bar
 ```
@@ -129,21 +142,12 @@ Puis installer les dépendances:
 sudo apt install xclip xsel
 sudo apt update && sudo apt upgrade
 ```
-
-## Configurer et Compiler le Makefile sur Geany  Linux puis Windows: 
-#### Sur Linux
-Se placer depuis ton fichier Makefile:
-Aller dans l'onglet "Build"
-Sélectionner "Set Build Commands" vous verrez dans ce cas "Make Commands" (Sans être dans le fichier Makefile cette option n'apparaîtra pas.)
+Voici un lien pour avoir des plugin comme des colors ou des auto-complétions:
 ```
-1ér Label =  Make       Command = make
-2ém Label = Make run    Command = make run
-3ém Label = Make clean  Command = clean (Cela dependra de votre configuration de fichier Makefile  et c'est même optionnel)
+https://debian-facile.org/doc:programmation:geany
 ```
-Dans la case "Commandes d'exécution" sur l'image remplacer (cas de Linux) ./%e par make run && xterm -e "./%e"
-![Img7](img/Tab6.png)
 
-#### Sur windows, simmilaire (selon le terminal pwsh)
+## Sur windows (selon le terminal pwsh)
 Il ne faut pas oublier la partie 1 Installation de MinGW (Sur Windows) : car la commade make ne marchera pas, donc activer le lien Symbolique ```mingw-make.exe ---> make.exe```.
 Modifier les cases comme sur l'image :
 ```
