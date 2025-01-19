@@ -2,8 +2,8 @@
 
 Ce guide explique comment installer configurer et utiliser un Makefile dans Visual Studio Code pour compiler et exécuter un projet C++.
 
-## Installation (Sur Windows) :
-Installer MinGw via le site officiel.
+## Installer le package Make Sur Windows durant l'installation de MinGw :
+Installer MinGw via le site officiel (sur google).
 Crée un lien symbolique pour éviter de modifier l'original ```mingw32-make.exe```.
 Tu peux ```créer un lien symbolique nommé make.exe qui pointe vers mingw32-make.exe```.
 
@@ -29,6 +29,17 @@ Selectionner le nombre qui vous convient et enregistrer.
 
 
 Vous pouvez aussi supprimer et resaisir de A à Z votre Makefile pour éviter les espaces blancs sinon elle marchera pas.
+
+## Exécuter votre Makefile via les commandes:
+```
+make
+```
+```
+make run
+```
+```
+clean ou make clean (selon la config)
+```
 
 ## Étape de Création du Makefile (Linux)
 
@@ -77,16 +88,6 @@ clean:
 run:
 	./$(TARGET)
 
-```
-## Exécuter votre Makefile via les commandes:
-```
-make
-```
-```
-make run
-```
-```
-clean ou make clean (selon la config)
 ```
 # Configuration du Makefile sur Geany
 
