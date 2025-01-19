@@ -159,6 +159,10 @@ Make --> powershell.exe -NoExit -Command "make"
 ```
 Make clean --> powershell.exe -NoExit -Command "make clean"
 ```
+Commandes d'exécutions (supprimer ./%e)
+```
+Exécuter --> make run
+```
 
 ![Img4](img/Tab3.png)
 
