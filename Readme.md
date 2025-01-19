@@ -30,9 +30,9 @@ Selectionner le nombre qui vous convient et enregistrer.
 
 Vous pouvez aussi supprimer et resaisir de A à Z votre Makefile pour éviter les espaces blancs sinon elle marchera pas.
 
-## Étape de Création du Makefile
+## Étape de Création du Makefile (Linux)
 
-Créez un fichier nommé `Makefile` dans le répertoire racine de votre projet et ajoutez-y le contenu suivant :
+Créez un fichier nommé `Makefile` dans le répertoire du projet ```/PrommationModulaire/``` et ajoutez-y le contenu suivant :
 
 ```makefile
 # Fichiers sources
@@ -55,6 +55,29 @@ run:
 ```
 
 Remplacer :   ``` rm -f $(TARGET)   par   del $(TARGET)```  si vous êtes sur Windows
+
+## Étape de Création du Makefile (Windows)
+
+Créez un fichier nommé `Makefile` dans le répertoire racine du projet ```/PrommationModulaire/Somme/``` et ajoutez-y le contenu suivant :
+
+```makefile
+# Fichiers sources
+SRCS = main.cxx Somme.cxx
+
+# Nom de l'exécutable
+TARGET = Exe.exe
+
+# Commande de compilation
+all:
+	g++ $(SRCS) -o $(TARGET)
+# Nettoyage des fichiers temporaires
+clean:
+	del /f /q $(TARGET)
+# Exécutable
+run:
+	./$(TARGET)
+
+```
 ## Exécuter votre Makefile via les commandes:
 ```
 make
@@ -106,7 +129,8 @@ sudo apt install xclip xsel
 sudo apt update && sudo apt upgrade
 ```
 
-## Configurer et Compiler le Makefile sur Geany (Fais sur Linux mais pareil pour les autres distributions), il faut suivre ces étapes: 
+## Configurer et Compiler le Makefile sur Geany  Linux puis Windows: 
+#### Sur Linux
 Se placer depuis ton fichier Makefile:
 Aller dans l'onglet "Build"
 Sélectionner "Set Build Commands" vous verrez dans ce cas "Make Commands" (Sans être dans le fichier Makefile cette option n'apparaîtra pas.)
@@ -118,9 +142,22 @@ Sélectionner "Set Build Commands" vous verrez dans ce cas "Make Commands" (Sans
 Dans la case "Commandes d'exécution" sur l'image remplacer (cas de Linux) ./%e par make run && xterm -e "./%e"
 ![Img7](img/Tab6.png)
 
-Sur windows, simmilaire (selon votre perminal pwsh ou cmd)
+#### Sur windows, simmilaire (selon le terminal pwsh)
 Il ne faut pas oublier la partie 1 Installation de MinGW (Sur Windows) : car la commade make ne marchera pas, donc activer le lien Symbolique ```mingw-make.exe ---> make.exe```.
+Modifier les cases comme sur l'image :
+```
+Make run --> powershell.exe -NoExit -Command "make run"
+```
+```
+Make --> powershell.exe -NoExit -Command "make"
+```
+```
+Make clean --> powershell.exe -NoExit -Command "make clean"
+```
+
 ![Img4](img/Tab3.png)
+
+
 
 # La compilation avec le Terminal de plusieurs ficiers (Sans Makefile):
 On fait Compilation des fichiers objets associé à chaque fichier source :

@@ -2,14 +2,16 @@
 SRCS = main.cxx Message.cxx
 
 # Nom de l'exécutable
-TARGET = Message:
+TARGET = Message.exe
 
 # Commande de compilation
 all:
 	g++ $(SRCS) -o $(TARGET)
+
 # Nettoyage des fichiers temporaires
 clean:
-	rm -rf $(TARGET)
+	del /f /q $(TARGET)
+
 # Exécutable
 run:
-	./$(TARGET)
+	$(TARGET)

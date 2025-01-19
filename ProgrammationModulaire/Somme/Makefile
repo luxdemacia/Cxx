@@ -2,14 +2,14 @@
 SRCS = main.cxx Somme.cxx
 
 # Nom de l'exécutable
-TARGET = SommeExe:
+TARGET = Exe.exe
 
 # Commande de compilation
 all:
 	g++ $(SRCS) -o $(TARGET)
 # Nettoyage des fichiers temporaires
 clean:
-	rm -f $(TARGET)
+	del /f /q $(TARGET)
 # Exécutable
 run:
 	./$(TARGET)
